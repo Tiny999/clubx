@@ -1,0 +1,12 @@
+.formInput{
+    margin-top: 20px !important;
+    color: var(--headers-black) !important;
+}
+
+.MuiOutlinedInput-notchedOutline :hover{
+    border-color: #3C5AAF !important;
+}
+
+.formInput label{
+    color: var(--light-text);
+}
