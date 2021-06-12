@@ -30,3 +30,21 @@ a{
 p{
   color: #6D758D;
 }
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--headers-black);
+}
+
+.MuiButton-root{
+  padding: 13px !important;
+  text-transform: capitalize !important;
+  font-family: muli, sans-serif !important;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.mt-auto{
+  margin-top: auto !important;
+}

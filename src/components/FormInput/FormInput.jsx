@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { TextField, InputAdornment, IconButton } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Visibility } from "@material-ui/icons";
 import { VisibilityOff } from "@material-ui/icons";
 import { useField } from "formik";
 
 import "./FormInput.css";
 
-const styles = (theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
       borderColor: "#3659B5",
@@ -19,9 +19,10 @@ const styles = (theme) => ({
   focused: {},
   error: {},
   notchedOutline: {},
-});
+}));
 
-const FormInput = ({ name, type, classes, ...otherProps }) => {
+const FormInput = ({name, type, ...otherProps}) => {
+  const classes = useStyles();
   const [field, meta] = useField(name);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -66,4 +67,4 @@ const FormInput = ({ name, type, classes, ...otherProps }) => {
   );
 };
 
-export default withStyles(styles)(FormInput);
+export default FormInput;

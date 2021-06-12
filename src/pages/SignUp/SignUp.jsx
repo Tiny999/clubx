@@ -53,14 +53,17 @@ const SignUp = ({history}) => {
             initialValues={{ ...INITIAL_FORM_STATE }}
             validationSchema={formValidation}
             onSubmit={(values) => {
-              console.log('hi');
+              console.log("hi");
             }}
           >
-            <Form onSubmit={(e) => {
-              e.preventDefault();
-              history.push('/login')
-            }}>
+            <Form
+              onSubmit={(e) => {
+                e.preventDefault();
+                history.push("/login");
+              }}
+            >
               <FormInput name="username" label="Username" />
+              <FormInput name="phone" type="tel" label="Phone number" />
               <FormInput name="referralCode" label="Referral Code (Optional)" />
               <FormInput name="password" label="Password" type="password" />
               <FormInput

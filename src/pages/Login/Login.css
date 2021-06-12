@@ -1,0 +1,36 @@
+.login{
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__intro{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.login__intro h1{
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.login__forgotPass{
+    margin: 25px 0;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.login .MuiButton-root{
+    margin: 25px 0;
+}
+
+.login__redirect{
+    color: #6D758D;
+}
+
+.login__copyright p{
+    color: var(--light-text);
+}
