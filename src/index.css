@@ -23,7 +23,8 @@ code {
 
 a{
   text-decoration: none !important;
-  color: #333 !important;
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
 }
 
 p{
