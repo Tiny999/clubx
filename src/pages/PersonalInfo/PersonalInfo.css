@@ -5,6 +5,7 @@
 
 .sheet-content{
     padding: 25px 20px;
+    overflow: auto;
 }
 
 .sheet-intro{
