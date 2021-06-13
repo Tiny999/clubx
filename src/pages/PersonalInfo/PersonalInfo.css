@@ -1,0 +1,39 @@
+.sheet-header{
+    padding: 20px;
+    border-bottom: 1px solid #98A0BC;
+}
+
+.sheet-content{
+    padding: 25px 20px;
+}
+
+.sheet-intro{
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.sheet-intro h3{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.sheet-intro p{
+    font-weight: 100;
+    color: #6D758D;
+    line-height: 1.5;
+}
+
+.sheet__select-gender{
+    margin-top: 25px;
+}
+.sheet__select-gender p{
+    color: var(--headers-black);
+}
+
+.sheet__select-gender .gender-radios{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+

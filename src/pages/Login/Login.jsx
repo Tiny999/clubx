@@ -8,7 +8,7 @@ import FormInput from '../../components/FormInput/FormInput';
 
 import './Login.css';
 
-const Login = () => {
+const Login = ({history}) => {
     const currentYear = new Date().getFullYear();
 
     const initialFormState = {
@@ -37,7 +37,12 @@ const Login = () => {
             console.log('Submitted')
           }}
         >
-          <Form>
+          <Form
+            onSubmit={(e) => {
+              e.preventDefault();
+              history.push('/step1');
+            }}
+          >
             <FormInput name="phone" label="Phone number" type="tel" />
             <FormInput name="password" label="Password" type="password" />
 
