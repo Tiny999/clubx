@@ -6,9 +6,9 @@ import { Formik, Form } from 'formik';
 import GenderRadio from '../../components/GenderRadio/GenderRadio';
 import FormInput from '../../components/FormInput/FormInput';
 
-import './PersonalInfo.css';
+import './Sheets.css';
 
-const PersonalInfo = () => {
+const PersonalInfo = ({history}) => {
 
     const initialFormValues = {
         firstName: '',
@@ -52,7 +52,12 @@ const PersonalInfo = () => {
                     ...initialFormValues,
                   }}
                 >
-                  <Form>
+                  <Form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      history.push('/step2')
+                    }}
+                  >
                     <FormInput name="firstName" label="First name" />
                     <FormInput name="lastName" label="Last name" />
                     <FormInput
@@ -78,7 +83,7 @@ const PersonalInfo = () => {
                     </Button>
                     
                     <div className="mt-20 text-center">
-                        <Link to="/step2">I'll do this later</Link>
+                        <Link to="/dashboard">I'll do this later</Link>
                     </div>
                   </Form>
                 </Formik>

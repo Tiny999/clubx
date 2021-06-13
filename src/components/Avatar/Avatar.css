@@ -1,0 +1,9 @@
+.avatar{
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.avatar.avatar-md{
+    height: 150px;
+    width: 150px;
+}
